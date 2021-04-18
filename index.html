@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--LINKS-->
+    <link rel="stylesheet" href="style.css" />
+    <title>First JS Experiment</title>
+  </head>
+  <body>
+    <!--Main Section-->
+    <section>
+      <h1>Light</h1>
+      <p>
+        Light or visible light is electromagnetic radiation within the portion
+        of the electromagnetic spectrum that can be perceived by the human eye.
+      </p>
+    </section>
+    <div class="light"></div>
+
+    <!--JS-->
+    <script type="text/javascript">
+      var position = document.documentElement;
+      position.addEventListener("mousemove", (e) => {
+        position.style.setProperty("--x", e.clientX + "px");
+        position.style.setProperty("--y", e.clientY + "px");
+      });
+    </script>
+  </body>
+</html>
